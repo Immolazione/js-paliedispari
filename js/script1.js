@@ -4,13 +4,21 @@ console.log('JS OK');
 // Chiedere all’utente di inserire una parola
 // Creare una funzione per capire se la parola inserita è palindroma
 
+// RECUPERO GLI ELEMENTI
+const wordField = document.getElementById('wordField');
+const resultField = document.getElementById('resultField');
+
 // CHIEDO ALL'UTENTE DI SCRIVERE UNA PAROLA
 const word = prompt('Inserisci una parola').trim();
 
-let result = '';
-for (let i = word.length; i >=0; i--) {
-    let current = word.charAt(i);
-    result += current
+reverse(word);
+function reverse(word) {
+    let result = '';
+    for (let i = word.length; i >=0; i--) {
+        let current = word.charAt(i);
+        result += current
+    }
+    if (result === word) {
+        
+    }
 }
-
-console.log(result);
