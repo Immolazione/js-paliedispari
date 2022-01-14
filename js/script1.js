@@ -14,11 +14,13 @@ const word = prompt('Inserisci una parola').trim();
 let result = '';
 let finalMessage;
 
+// REVERSE PAROLA
 for (let i = word.length; i >=0; i--) {
     let current = word.charAt(i);
     result += current
 }
 
+// CONFRONTO PER VEDERE SE LA PAROLA è PALINDROMA
 if (result === word) {
     finalMessage = `è Palindromo/a!`
 } else {
