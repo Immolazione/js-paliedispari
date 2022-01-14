@@ -7,6 +7,9 @@ console.log('JS OK');
 // CHIEDO ALL'UTENTE DI SCRIVERE UNA PAROLA
 const word = prompt('Inserisci una parola').trim();
 
+// INVOCAZIONE
+reversedWord(word);
+
 function reversedWord(word) {
     // REVERSE DELLA PAROLA
     
