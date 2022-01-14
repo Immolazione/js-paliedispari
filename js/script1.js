@@ -7,6 +7,10 @@ console.log('JS OK');
 // CHIEDO ALL'UTENTE DI SCRIVERE UNA PAROLA
 const word = prompt('Inserisci una parola').trim();
 
+let result = '';
 for (let i = word.length; i >=0; i--) {
-    
+    let current = word.charAt(i);
+    result += current
 }
+
+console.log(result);
