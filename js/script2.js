@@ -12,29 +12,3 @@ const choiceField = document.getElementById('choice');
 const numberField = document.getElementById('number');
 const playButton = document.getElementById('play');
 const winnerField = document.getElementById('winner');
-
-// UTENTE SCEGLIE PARI/DISPARI, E NUMERO
-// const userChoice =
-// const userNumber =
-
-const pcMax = 6;
-const pcMin = 1;
-
-let pcNumber;
-let sum = 0;
-let winner;
-
-// INVOCAZIONE FUNZIONE
-
-
-// FUNZIONE CON MATH RANDOM PER PC
-function getPcNumber(pcMax, pcMin) {
-    pcNumber = Math.floor(Math.random() * (pcMax - pcMin) + pcMin);
-    // return pcNumber;
-    sum += userNumber + pcNumber;
-    
-    if (sum % 2) {
-        winner = 
-    }
-
-console.log(getPcNumber(pcMax, pcMin));
