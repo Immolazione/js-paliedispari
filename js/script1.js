@@ -12,14 +12,21 @@ const resultField = document.getElementById('resultField');
 const word = prompt('Inserisci una parola').trim();
 
 let result = '';
+let finalMessage;
+
 for (let i = word.length; i >=0; i--) {
     let current = word.charAt(i);
     result += current
 }
 
+if (result === word) {
+    finalMessage = `è Palindromo/a!`
+} else {
+    finalMessage = `non è Palindromo/a!`
+}
 
 
 
 // PORTO I RISULTATI DENTRO AGLI ELEMENTI HTML
-wordField.innerHTML = result;
-resultField.innerText = '';
+wordField.innerHTML = word;
+resultField.innerText = finalMessage;
