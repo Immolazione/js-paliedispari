@@ -7,11 +7,34 @@ console.log('JS OK');
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
+// RECUPERO ELEMENTI
+const choiceField = document.getElementById('choice');
+const numberField = document.getElementById('number');
+const playButton = document.getElementById('play');
+const winnerField = document.getElementById('winner');
+
 // UTENTE SCEGLIE PARI/DISPARI, E NUMERO
-const userChoice = prompt('Scegli: Pari o Dispari?', 'Pari');
-const userNumber = parseInt(prompt('Scegli un numero, da 1 a 5', '1'));
+// const userChoice =
+// const userNumber =
+
+const pcMax = 6;
+const pcMin = 1;
+
+let pcNumber;
+let sum = 0;
+let winner;
+
+// INVOCAZIONE FUNZIONE
+
 
 // FUNZIONE CON MATH RANDOM PER PC
-function pcChoice() {
+function getPcNumber(pcMax, pcMin) {
+    pcNumber = Math.floor(Math.random() * (pcMax - pcMin) + pcMin);
+    // return pcNumber;
+    sum += userNumber + pcNumber;
     
-}
+    if (sum % 2) {
+        winner = 
+    }
+
+console.log(getPcNumber(pcMax, pcMin));
