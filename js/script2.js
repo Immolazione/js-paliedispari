@@ -6,3 +6,12 @@ console.log('JS OK');
 // Sommiamo i due numeri
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
+
+// UTENTE SCEGLIE PARI/DISPARI, E NUMERO
+const userChoice = prompt('Scegli: Pari o Dispari?', 'Pari');
+const userNumber = parseInt(prompt('Scegli un numero, da 1 a 5', '1'));
+
+// FUNZIONE CON MATH RANDOM PER PC
+function pcChoice() {
+    
+}
