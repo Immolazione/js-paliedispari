@@ -7,7 +7,7 @@ console.log('JS OK');
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
-
+// #1 CHIEDO ALL'UTENTE
 
 // const userChoice = prompt('Scegli pari o dispari').trim();
 const userNumber = parseInt(prompt('Scegli un numero da 1 a 5').trim());
@@ -15,7 +15,11 @@ const userNumber = parseInt(prompt('Scegli un numero da 1 a 5').trim());
 // console.log(userChoice);
 console.log(userNumber);
 
+// #2 COSTANTE PER LA FUNZIONE
+
 const pcNumber = rndNumber(1, 5);
+
+// #3 FUNZIONE
 
 function rndNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -32,42 +36,9 @@ console.log(sum);
 //     console.log(`La somma è: ${sum}, ha vinto l'Utente`);
 // }
 
+// --------------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ! ESERCIZIO COMPLICATO CHE FARò POI 
 
 // RECUPERO ELEMENTI
 // const choiceField = document.getElementById('choice');
