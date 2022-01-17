@@ -27,14 +27,18 @@ function rndNumber(min, max) {
 // console.log(rndNumber(1, 5)); QUESTA NON VA MA NON SO PERCHè 
 console.log(pcNumber); 
 
+// #4 STABILISCO SOMMA
+
 let sum = userNumber + pcNumber;
 console.log(sum);
 
-// if (sum % 2 == 0) {
-//     console.log(`La somma è: ${sum}, ha vinto il PC`);
-// } else {
-//     console.log(`La somma è: ${sum}, ha vinto l'Utente`);
-// }
+// #5 VERIFICO SOMMA PARI O DISPARI
+
+if (sum % 2 === 0) {
+    console.log(`La somma è: ${sum}, ha vinto il PC`);
+} else {
+    console.log(`La somma è: ${sum}, ha vinto l'Utente`);
+}
 
 // --------------------------------------------------
 
