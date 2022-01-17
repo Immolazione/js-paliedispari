@@ -16,7 +16,10 @@ while (userChoice !== 'pari' && userChoice !== 'dispari') {
     userChoice = prompt('Scegli Pari o Dispari').toLowerCase().trim();
 }
 
-const userNumber = parseInt(prompt('Scegli un numero da 1 a 5').trim());
+let userNumber = parseInt(prompt('Scegli un numero da 1 a 5').trim());
+while (!userNumber || userNumber < 1 || userNumber > 5) {
+    userNumber = parseInt(prompt('Scegli un numero da 1 a 5').trim());
+}
 
 console.log(userChoice);
 console.log(userNumber);
