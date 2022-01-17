@@ -9,10 +9,10 @@ console.log('JS OK');
 
 // #1 CHIEDO ALL'UTENTE
 
-// const userChoice = prompt('Scegli pari o dispari').trim();
+const userChoice = prompt('Scegli Pari o Dispari').trim();
 const userNumber = parseInt(prompt('Scegli un numero da 1 a 5').trim());
 
-// console.log(userChoice);
+console.log(userChoice);
 console.log(userNumber);
 
 // #2 COSTANTE PER LA FUNZIONE
@@ -34,13 +34,13 @@ console.log(sum);
 
 // #5 VERIFICO SOMMA PARI O DISPARI
 
-if (sum % 2 === 0) {
-    console.log(`La somma è: ${sum}, ha vinto il PC`);
-} else {
-    console.log(`La somma è: ${sum}, ha vinto l'Utente`);
+let oddEven = result(sum);
+
+function result(sum) {
+    
 }
 
-// --------------------------------------------------
+// -----------------------------------------------------------------------------
 
 // ! ESERCIZIO COMPLICATO CHE FARò POI 
 
