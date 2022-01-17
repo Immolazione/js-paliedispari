@@ -37,7 +37,20 @@ console.log(sum);
 let oddEven = result(sum);
 
 function result(sum) {
-    
+    if (sum % 2 == 0) {
+        return "pari";
+    } else {
+        return "dispari";
+    }
+}
+console.log(oddEven);
+
+// CONFRONTO USERCHOICE E SOMMA
+
+if (oddEven == userChoice) {
+    console.log(`Ha vinto l'Utente`)
+} else {
+    console.log(`Ha vinto il PC`)
 }
 
 // -----------------------------------------------------------------------------
