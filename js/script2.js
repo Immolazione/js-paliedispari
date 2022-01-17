@@ -43,20 +43,17 @@ console.log(sum);
 
 // #5 VERIFICO SOMMA PARI O DISPARI
 
-let oddEven = result(sum);
+result(sum);
 
 function result(sum) {
-    if (sum % 2 == 0) {
-        return "pari";
-    } else {
-        return "dispari";
-    }
+    return sum % 2 === 0 ? true : false;
 }
+
 console.log(oddEven);
 
 // CONFRONTO USERCHOICE E SOMMA
 
-if (oddEven == userChoice) {
+if (result(sum) && userChoice === 'pari' || !result(sum) && userChoice === 'dispari') {
     console.log(`Ha vinto l'Utente`)
 } else {
     console.log(`Ha vinto il PC`)
