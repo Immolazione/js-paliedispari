@@ -9,23 +9,28 @@ console.log('JS OK');
 
 
 
-const userNumber = prompt('Scegli pari o dispari').trim();
-const userChoice = parseInt(prompt('Scegli un numero da 1 a 5').trim());
+// const userChoice = prompt('Scegli pari o dispari').trim();
+const userNumber = parseInt(prompt('Scegli un numero da 1 a 5').trim());
 
+// console.log(userChoice);
 console.log(userNumber);
-console.log(userChoice);
 
 const pcNumber = rndNumber(1, 5);
 
 function rndNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-console.log(rndNumber(1, 5));
+// console.log(rndNumber(1, 5)); QUESTA NON VA MA NON SO PERCHè 
+console.log(pcNumber); 
 
 let sum = userNumber + pcNumber;
 console.log(sum);
 
-
+// if (sum % 2 == 0) {
+//     console.log(`La somma è: ${sum}, ha vinto il PC`);
+// } else {
+//     console.log(`La somma è: ${sum}, ha vinto l'Utente`);
+// }
 
 
 
