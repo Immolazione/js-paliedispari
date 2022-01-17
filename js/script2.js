@@ -9,10 +9,12 @@ console.log('JS OK');
 
 // #1 CHIEDO ALL'UTENTE
 
-const userChoice = prompt('Scegli Pari o Dispari').toLowerCase().trim();
+let userChoice = prompt('Scegli Pari o Dispari').toLowerCase().trim();
 
 // VALIDAZIONE
-while (userChoice !== 'pari' && userChoice !== 'dispari');
+while (userChoice !== 'pari' && userChoice !== 'dispari') {
+    userChoice = prompt('Scegli Pari o Dispari').toLowerCase().trim();
+}
 
 const userNumber = parseInt(prompt('Scegli un numero da 1 a 5').trim());
 
