@@ -17,11 +17,13 @@ console.log(userChoice);
 
 const pcNumber = rndNumber(1, 5);
 
-
 function rndNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 console.log(rndNumber(1, 5));
+
+let sum = userNumber + pcNumber;
+console.log(sum);
 
 
 
