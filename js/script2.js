@@ -9,7 +9,19 @@ console.log('JS OK');
 
 
 
+const userNumber = prompt('Scegli pari o dispari').trim();
+const userChoice = parseInt(prompt('Scegli un numero da 1 a 5').trim());
 
+console.log(userNumber);
+console.log(userChoice);
+
+const pcNumber = rndNumber(1, 5);
+
+
+function rndNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+console.log(rndNumber(1, 5));
 
 
 
