@@ -49,7 +49,7 @@ function result(sum) {
     return sum % 2 === 0 ? true : false;
 }
 
-console.log(oddEven);
+console.log(result(sum));
 
 // CONFRONTO USERCHOICE E SOMMA
 
