@@ -46,7 +46,7 @@ console.log(sum);
 result(sum);
 
 function result(sum) {
-    return sum % 2 === 0 ? true : false;
+    return sum % 2 === 0;
 }
 
 console.log(result(sum));
